@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>doze. coffee</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/hero.css">
     </head>
     <body>
         <!-- Header Elements -->
@@ -27,10 +28,88 @@
         </header>
 
         <!-- Hero -->
-        <div class="hero">
-            <!-- TODO: Add hero image -->
-            <img src="#" alt="hero image" class="hero-image">
-            <p class="hero-text">a good taste of palpitation</p>
+        <div class="carousel">
+            <div class="list">
+                <div class="item active" 
+                style="
+                --img-src: url('images/item1.png');
+                --bg-color: #7a4500;
+                --title: 'Classic'
+                ">
+                    <div class="content">
+                        <div class="image"></div>
+                        <div class="info">
+                            <div class="title">
+                            NEW ITEMS - CLASSIC DOZE
+                            </div>
+                            <div class="category">
+                                HOUSE BLEND COFFEE
+                            </div>
+                            <div class="des">
+                                Your favorite coffee shop’s signature brew — now in a can. Smooth, bold, and perfectly balanced, Classic Doze is your dependable wake-up call wherever the day takes you. It’s the same cup you love from our counter, crafted for life on the go. No frills, no fuss — just pure, roasted perfection that delivers that “ahh, that’s better” moment with every sip. Think of it as your daily ritual, now easier to grab, crack open, and conquer the day with.
+                            </div>
+                            <div class ="price-tag">₱79.99</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" 
+                style="
+                --img-src: url('images/item2.png');
+                --bg-color: #311400;
+                --title: 'OVER'
+                ">
+                    <div class="content">
+                        <div class="image"></div>
+                        <div class="info">
+                            <div class="title">
+                                NEW ITEMS - <br>OVER DOZE
+                            </div>
+                            <div class="category">
+                                BLACK COFFEE
+                            </div>
+                            <div class="des">
+                                Maximum caffeine. Minimum chill. Over Doze is for the brave, the sleepless, and the “just one more task” crowd. It’s dark, bold, and a little dangerous — like the energy drink’s cooler, more mature cousin. One sip and you’ll feel the surge: smooth espresso intensity that doesn’t hold back. Whether you’re cramming for a deadline or chasing that next big win, Over Doze has your back — no sleep required.
+                            </div>
+                
+                            <div class ="price-tag">₱79.99</div>
+                            </a>                        
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item" 
+                style="
+                --img-src: url('images/item3.png');
+                --bg-color: #a15803;
+                --title: 'CARAMEL'
+                ">
+                    <div class="content">
+                        <div class="image"></div>
+                        <div class="info">
+                            <div class="title">
+                                NEW ITEMS - CARAMEL DOZE
+                            </div>
+                            <div class="category">
+                                CARAMEL BLEND COFFEE
+                            </div>
+                            <div class="des">
+                                Meet the show-stopper. Buttery caramel swirls into rich, silky espresso to create a flavor that turns an ordinary Tuesday into main character energy. Sweet, cozy, and dangerously addictive, CaramDoze is what happens when comfort meets confidence in a can. It’s smooth enough for a slow morning, yet bold enough to power your hustle. Go ahead — indulge your sweet side without missing a beat.
+                            </div>
+                            <div class ="price-tag">₱79.99</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="arrows">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+            </ul>
         </div>
 
         <!-- Information containers -->
