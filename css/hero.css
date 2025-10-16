@@ -86,13 +86,13 @@
     --left: -200px;
     background: 
         var(--img-src) var(--left) 0,
-        url(images/soda.png) no-repeat;
+        url(img/soda.png) no-repeat;
     background-size: 100% auto;
     background-blend-mode: multiply;
-    -webkit-mask-image: url(images/soda.png);
+    -webkit-mask-image: url(img/soda.png);
     -webkit-mask-size: 100% auto;
     -webkit-mask-repeat: no-repeat;
-    mask-image: url(images/soda.png);
+    mask-image: url(img/soda.png);
     mask-size: 100% auto;
     mask-repeat: no-repeat;
     transition: background 1s ease-in-out;
