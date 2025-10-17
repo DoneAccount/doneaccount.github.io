@@ -2,7 +2,7 @@
 
 A 1st Semester Final Project for 6INTROWEB – Introduction to Web Programming
 
-📍 Holy Angel University
+# 📍 Holy Angel University
 
 👩‍💻 Team Members
 
