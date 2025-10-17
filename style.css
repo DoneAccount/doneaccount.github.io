@@ -570,7 +570,7 @@ body {
 }
 /* responsive */
 /* Tablet styles - hide price tags */
-@media screen and (min-width: 768px) and (max-width: 1024px){
+@media screen and (min-width: 100px) and (max-width: 1024px){
     .carousel .list .item .info .price-tag {
         display: none;
     }
