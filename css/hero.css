@@ -260,6 +260,7 @@
     clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
     animation: animationClipPath 0.9s ease-in-out 1 forwards;
 }
+
 @keyframes animationClipPath{
     to{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
