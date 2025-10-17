@@ -1,5 +1,5 @@
 # ☕ doze. coffee
-
+./screenshots/website-desc2.png
 A 1st Semester Final Project for 6INTROWEB – Introduction to Web Programming
 
 # 📍 Holy Angel University
