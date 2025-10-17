@@ -190,6 +190,7 @@
     transform: translateX(-50%);
     transition: background 0.5s;
 }
+
 .carousel{
     overflow: hidden;
 }
