@@ -12,6 +12,9 @@
     transform-origin: left;
 }
 
+
+
+
 .carousel .list .item .info .price-tag::before {
     content: '';
     position: absolute;
@@ -3222,3 +3225,4 @@ footer h3, footer h4 {
     }
 }
 /* ===== END NOTIFICATION STYLES ===== */
+
