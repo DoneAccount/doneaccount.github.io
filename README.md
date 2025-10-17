@@ -1,5 +1,5 @@
 # ☕ doze. coffee
-![Website Description 2](screenshots of mockups/website-desc.png)
+![Website Description 2](https://github.com/DoneAccount/doneaccount.github.io/blob/main/screenshots%20of%20mockups/website-desc.png)
 A 1st Semester Final Project for 6INTROWEB – Introduction to Web Programming
 
 # 📍 Holy Angel University
