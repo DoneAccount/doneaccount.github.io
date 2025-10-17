@@ -269,6 +269,7 @@
 .carousel.effect{
     --transform: 300px;
 }
+
 .carousel.effect .item.active{
     --transform-from: calc(var(--transform) * -1);
     --transform-to: 0px;
