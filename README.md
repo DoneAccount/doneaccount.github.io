@@ -32,3 +32,4 @@ Mastery of fundamental web technologies
 Responsive and aesthetic design principles
 
 Application of interactivity using pure JavaScript
+# ⚙️ WEBSITE PREVIEW
