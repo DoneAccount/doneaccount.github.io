@@ -1,5 +1,5 @@
 # doze. coffee Website
-A 1st semester final period project for **6INTROWEB** (Introduction to Web Programming) at Holy Angel University.
+A 1st Semester FINAL PERIOD Project for **6INTROWEB** (Introduction to Web Programming) at Holy Angel University.
 
 Made by:
 - Bautista, Mark Anthony
