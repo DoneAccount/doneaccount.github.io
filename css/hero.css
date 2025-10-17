@@ -248,6 +248,7 @@
 .carousel.effect .item .info .des{
     animation-delay: 0.2s;
 }
+
 .carousel.effect .item .info .price-tag {
     animation: transformAnimation 1s ease-in-out 1 forwards;
     animation-delay: 0.3s;
