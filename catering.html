@@ -1,8 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Catering page -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doze. coffee</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/png" href="images/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="catering.html" class="active">Catering</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
 
-        <!-- TODO: Make a form for catering based on the actual Google Form. -->
-    </head>
+    <!-- Catering Hero Section -->
+    <section class="hero-catering">
+        <div class="hero-content">
+            <h1 class="animated-text-catering">
+                Mobile Bar<br>
+                Catering Services
+            </h1>
+            <div class="hero-buttons-vertical">
+                <button class="view-more-btn" onclick="scrollToCateringContent()">
+                    <strong>EXPLORE PACKAGES</strong>
+                    <i class="fas fa-arrow-down"></i>
+                </button>
+                <button class="message-btn" onclick="scrollToForm()">
+                    <strong>SEND US A MESSAGE</strong>
+                    <i class="fas fa-envelope"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catering Content-->
+    <div class="catering-content-wrapper" id="catering-content">
+
+    <!-- Headline-->
+    <h2 class="headline">We cater all kinds of events.</h2>
+    <p class="headline-subtitle">(wedding, debut, baptismal, birthday, corporate event, school activities, etc.)</p>
+
+    <!-- Packages -->
+    <div class="package-flex">
+        <div class="package-box">
+            <h2 class="type">PACKAGE A</h2>
+            <span class="price">P5,000</span>
+            <span class="cups">(50 cups)</span>
+            <p class="pax-info">Good for 40-50 pax</p>
+        </div>
+        <div class="package-box">
+            <h2 class="type">PACKAGE B</h2>
+            <span class="price">P9,000</span>
+            <span class="cups">(100 cups)</span>
+            <p class="pax-info">Good for 85-100 pax</p>
+        </div>
+        <div class="package-box">
+            <h2 class="type">PACKAGE C</h2>
+            <span class="price">P13,000</span>
+            <span class="cups">(150 cups)</span>
+            <p class="pax-info">Good for 130-150 pax</p>
+        </div>
+    </div>
+
+    <!-- Inclusions and Options Wrapper -->
+    <div class="inclusions-options-wrapper">
+        <!-- Inclusions Section (Image and List Side by Side) -->
+        <div class="inclusions-section">
+            <h2 class="package-inclusions">Package Inclusions:</h2>
+            <div class="inclusions-flex">
+                <div class="inclusions-content">
+                    <ul class="inclusions-list">
+                        <li>Preparation and service of beverages in a 12 ounces cup size and seven flavors to choose from.</li>
+                        <li>Three hours of brewing service.</li>
+                        <li>Customized stickers for cup and claiming stub.</li>
+                        <li>Delivery, setup, and dismantling of the coffee bar.</li>
+                        <li>Provision of one trained barista and one support staff.</li>
+                        <li>Necessary equipment including espresso machines, grinders, and serving materials.</li>
+                    </ul>
+                </div>
+                <div class="inclusions-image-wrapper">
+                    <img src="images/catering-img3.jpg" alt="Catering service" class="inclusions-image">
+                </div>
+            </div>
+        </div>
+
+        <!-- Options Section (Below Inclusions) -->
+        <div class="options-section">
+            <h2 class="drink-options"><i class="fas fa-mug-hot"></i> Options:</h2>
+            <div class="options-wrapper">
+                <!-- Coffee Option -->
+                <div class="option-row">
+                    <img src="images\12oz-1.png" alt="Coffee drink" class="option-image-left">
+                    <div class="option">
+                        <h2 class="option-header"><i class="fas fa-coffee"></i> Coffee</h2>
+                        <ul>
+                            <li><i class="fas fa-circle"></i> Americano</li>
+                            <li><i class="fas fa-circle"></i> Barista's Favorite</li>
+                            <li><i class="fas fa-circle"></i> Spanish Latte</li>
+                            <li><i class="fas fa-circle"></i> Caramel Macchiato</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Non-Coffee Option -->
+                <div class="option-row">
+                    <div class="option">
+                        <h2 class="option-header"><i class="fas fa-glass-whiskey"></i> Non-Coffee</h2>
+                        <ul>
+                            <li><i class="fas fa-circle"></i> Chocolate</li>
+                            <li><i class="fas fa-circle"></i> Strawberry Latte</li>
+                            <li><i class="fas fa-circle"></i> Matcha Latte</li>
+                        </ul>
+                    </div>
+                    <img src="images\12oz-2.png" alt="Non-coffee drink" class="option-image-right">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Inclusions and Options Wrapper -->
+
+    <!-- Form Background Section -->
+    <div class="form-background-section">
+        <!-- Mobile Bar Form -->
+        <h2><i class="fas fa-file-alt"></i> Doze. Coffee Mobile Bar Booking Form</h2>
+
+        <form action="/submit" method="post">
+        <!-- Left Column -->
+        <!-- Customer Name -->
+        <div class="form-group">
+            <label for="name"><i class="fas fa-user"></i> Customer's Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+            <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+        </div>
+
+        <!-- Contact Number -->
+        <div class="form-group">
+            <label for="contact"><i class="fas fa-phone"></i> Contact Number:</label>
+            <input type="tel" id="contact" name="contact" required placeholder="09XX XXX XXXX">
+        </div>
+
+        <!-- Event Date -->
+        <div class="form-group">
+            <label for="date"><i class="fas fa-calendar-day"></i> Event Date:</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+
+        <!-- Right Column -->
+        <!-- Type of Event -->
+        <div class="form-group">
+            <label><i class="fa-solid fa-calendar"></i> Type of Event:</label>
+            <div class="radio-group">
+                <div class="radio-option">
+                    <input type="radio" id="birthday" name="event_type" value="Birthday" required>
+                    <label for="birthday">Birthday</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="wedding" name="event_type" value="Wedding">
+                    <label for="wedding">Wedding</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="other" name="event_type" value="Other">
+                    <label for="other">Other</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Event Start Time -->
+        <div class="form-group">
+            <label for="time"><i class="fas fa-clock"></i> Event Start Time:</label>
+            <input type="time" id="time" name="time" required>
+        </div>
+
+        <!-- Number of Attendees -->
+        <div class="form-group">
+            <label for="attendees"><i class="fas fa-users"></i> Number of Attendees:</label>
+            <select id="attendees" name="attendees" required>
+                <option value="">--Select--</option>
+                <option value="50">50 pax</option>
+                <option value="100">100 pax</option>
+                <option value="150">150 pax</option>
+                <option value="200">200 pax</option>
+            </select>
+        </div>
+
+        <!-- Package Selection -->
+        <div class="form-group">
+            <label for="package"><i class="fas fa-box"></i> Select a Package:</label>
+            <select id="package" name="package" required>
+                <option value="">--Select--</option>
+                <option value="A">Package A - 50 cups - ₱5000</option>
+                <option value="B">Package B - 100 cups - ₱9000</option>
+                <option value="C">Package C - 150 cups - ₱13000</option>
+            </select>
+        </div>
+
+        <!-- Event Description (Full Width) -->
+        <div class="form-group full-width">
+            <label for="description"><i class="fas fa-align-left"></i> Event Description:</label>
+            <textarea id="description" name="description" rows="4" placeholder="Tell us about your event..."></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit"><i class="fas fa-paper-plane"></i> Submit Booking</button>
+    </form>
+
+    </div>
+    <!-- End Form Background Section -->
+
+    </div>
+    <!-- End Catering Content Wrapper -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <!-- Left Side: Follow us on and Contact us -->
+            <div class="footer-left">
+                <!-- Follow us on Section -->
+                <div class="footer-section">
+                    <h3>Follow us on</h3>
+                    <div class="follow-flex">
+                        <a href="https://www.facebook.com/dozecoffeeofficial" target="_blank" class="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>@dozecoffeeofficial</span>
+                        </a>
+                        <a href="https://www.instagram.com/_doze.coffee/" target="_blank" class="instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span>@_doze.coffee</span>
+                        </a>
+                        <a href="https://www.tiktok.com/@doze.coffee" target="_blank" class="tiktok">
+                            <i class="fab fa-tiktok"></i>
+                            <span>@doze.coffee</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Us Section -->
+                <div class="footer-section">
+                    <h3>Contact us</h3>
+                    <div class="contact-flex">
+                        <a href="tel:+639616824284" class="phone">
+                            <i class="fas fa-phone"></i>
+                            <span>0961 682 4284</span>
+                        </a>
+                        <a href="mailto:doze.coffee@yahoo.com" class="email">
+                            <i class="fas fa-envelope"></i>
+                            <span>doze.coffee@yahoo.com</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Creators Section -->
+            <div class="footer-section creators-section">
+                <h4>Created by:</h4>
+                <div class="creators-list">
+                    <p class="creator-name">Bautista, Mark Anthony A.</p>
+                    <p class="creator-name">Bermas, Estella Mae E.</p>
+                    <p class="creator-name">Cunanan, Renz Edric A.</p>
+                    <p class="course-code">Submitted to: Dr. Raquel B. Rivera (2089-6INTROWEB)</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
 </html>

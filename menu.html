@@ -1,6 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Menu page -->
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doze. menu</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/png" href="images/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="catering.html">Catering</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- slider -->
+    <div class="carousel effect" id="carousel-section">
+        <div class="list">
+            <div class="item active" 
+            style="
+            --img-src: url('images/item1.png');
+            --bg-color: #024b9e;
+            --title: 'Classic'
+            ">
+                <div class="content">
+                    <div class="image"></div>
+                    <div class="info">
+                        <div class="title">
+                        NEW ITEMS - CLASSIC DOZE
+                        </div>
+                        <div class="category">
+                            HOUSE BLEND COFFEE
+                        </div>
+                        <div class="des">
+                            Your favorite coffee shop's signature brew — now in a can. Smooth, bold, and perfectly balanced, Classic Doze is your dependable wake-up call wherever the day takes you. It's the same cup you love from our counter, crafted for life on the go. No frills, no fuss — just pure, roasted perfection that delivers that "ahh, that's better" moment with every sip. Think of it as your daily ritual, now easier to grab, crack open, and conquer the day with.
+                        </div>
+                        <div class ="price-tag">₱79.99</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item" 
+            style="
+            --img-src: url('images/item2.png');
+            --bg-color: #311400;
+            --title: 'OVER'
+            ">
+                <div class="content">
+                    <div class="image"></div>
+                    <div class="info">
+                        <div class="title">
+                            NEW ITEMS - <br>OVER DOZE
+                        </div>
+                        <div class="category">
+                            BLACK COFFEE
+                        </div>
+                        <div class="des">
+                            Maximum caffeine. Minimum chill. Over Doze is for the brave, the sleepless, and the "just one more task" crowd. It's dark, bold, and a little dangerous — like the energy drink's cooler, more mature cousin. One sip and you'll feel the surge: smooth espresso intensity that doesn't hold back. Whether you're cramming for a deadline or chasing that next big win, Over Doze has your back — no sleep required.
+                        </div>
+            
+                        <div class ="price-tag">₱79.99</div>
+                        </a>                        
+
+                    </div>
+                </div>
+            </div>
+            <div class="item" 
+            style="
+            --img-src: url('images/item3.png');
+            --bg-color: #a15803;
+            --title: 'CARAMEL'
+            ">
+                <div class="content">
+                    <div class="image"></div>
+                    <div class="info">
+                        <div class="title">
+                            NEW ITEMS - CARAMEL DOZE
+                        </div>
+                        <div class="category">
+                            CARAMEL BLEND COFFEE
+                        </div>
+                        <div class="des">
+                            Meet the show-stopper. Buttery caramel swirls into rich, silky espresso to create a flavor that turns an ordinary Tuesday into main character energy. Sweet, cozy, and dangerously addictive, Caramel Doze is what happens when comfort meets confidence in a can. It's smooth enough for a slow morning, yet bold enough to power your hustle. Go ahead — indulge your sweet side without missing a beat.
+                        </div>
+                        <div class ="price-tag">₱79.99</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <!-- Menu Elements -->
+    <h2 class="menu-title">Our Menu</h2>
+    <p class="menu-subtitle">Explore our handcrafted beverages made with love</p>
+
+    <!-- Menu Navigation -->
+    <div class="menu-nav">
+        <button class="menu-nav-btn active" data-category="all">
+            <i class="fas fa-th"></i> All
+        </button>
+        <button class="menu-nav-btn" data-category="coffee">
+            <i class="fas fa-coffee"></i> Coffee
+        </button>
+        <button class="menu-nav-btn" data-category="specialty">
+            <i class="fas fa-star"></i> Specialty
+        </button>
+        <button class="menu-nav-btn" data-category="non-coffee">
+            <i class="fas fa-leaf"></i> Non-Coffee
+        </button>
+    </div>
+
+    <!-- Menu Grid -->
+    <div class="menu-container">
+        <button class="menu-arrow menu-arrow-left" id="menuPrev">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        
+        <div class="menu-grid">
+            <!-- Coffee Items -->
+            <div class="menu-item" data-category="coffee">
+                <div class="menu-item-image">
+                    <img src="images/menu-items/baristas favorite.png" alt="Barista's Favorite">
+                    <div class="menu-badge">Popular</div>
+                </div>
+                <div class="menu-item-content">
+                    <span class="menu-item-title">Barista's Favorite</span>
+                    <p class="menu-item-description">Full-bodied espresso infused with sweetened sauce and a splash of breve.</p>
+                    <div class="menu-item-prices">
+                        <span class="price-tag"><i class="fas fa-snowflake"></i> Iced - ₱130</span>
+                        <span class="price-tag"><i class="fas fa-fire"></i> Hot - ₱135</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="coffee">
+                <div class="menu-item-image">
+                    <img src="images/menu-items/spanish latte.png" alt="Spanish Latte">
+                    <div class="menu-badge best-seller">Best Seller</div>
+                </div>
+                <div class="menu-item-content">
+                    <span class="menu-item-title">Spanish Latte</span>
+                    <p class="menu-item-description">Signature espresso combined with sweetened cream milk and cinnamon flavor.</p>
+                    <div class="menu-item-prices">
+                        <span class="price-tag"><i class="fas fa-snowflake"></i> Iced - ₱120</span>
+                        <span class="price-tag"><i class="fas fa-fire"></i> Hot - ₱135</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="coffee">
+                <div class="menu-item-image">
+                    <img src="images/menu-items/americano.png" alt="Americano">
+                </div>
+                <div class="menu-item-content">
+                    <span class="menu-item-title">Americano</span>
+                    <p class="menu-item-description">Classic espresso diluted with hot water for a smooth, bold flavor.</p>
+                    <div class="menu-item-prices">
+                        <span class="price-tag"><i class="fas fa-snowflake"></i> Iced - ₱100</span>
+                        <span class="price-tag"><i class="fas fa-fire"></i> Hot - ₱110</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="coffee">
+                <div class="menu-item-image">
+                    <img src="images/menu-items/caramel macchiato.png" alt="Caramel Macchiato">
+                </div>
+                <div class="menu-item-content">
+                    <span class="menu-item-title">Caramel Macchiato</span>
+                    <p class="menu-item-description">Velvety espresso layered with vanilla-flavored syrup and caramel drizzle.</p>
+                    <div class="menu-item-prices">
+                        <span class="price-tag"><i class="fas fa-snowflake"></i> Iced - ₱140</span>
+                        <span class="price-tag"><i class="fas fa-fire"></i> Hot - ₱145</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Specialty Items -->
+            <div class="menu-item" data-category="specialty">
+                <div class="menu-item-image">
+                    <img src="images/menu-items/sea salt latte.png" alt="Sea Salt Latte">
+                    <div class="menu-badge new">New</div>
+                </div>
+                <div class="menu-item-content">
+                    <span class="menu-item-title">Sea Salt Latte</span>
+                    <p class="menu-item-description">Signature espresso mixed with breve and topped off with cold foam and a sprinkle of salt.</p>
+                    <div class="menu-item-prices">
+                        <span class="price-tag"><i class="fas fa-snowflake"></i> Iced - ₱130</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="specialty">
+                <div class="menu-item-image">
+                    <img src="images/menu-items/biscoff cookie latte.png" alt="Biscoff Cookie Latte">
+                    <div class="menu-badge">Special</div>
+                </div>
+                <div class="menu-item-content">
+                    <span class="menu-item-title">Biscoff Cookie Latte</span>
+                    <p class="menu-item-description">Creamy coffee-based drink with sweet buttery and caramel flavor that goes along with a shot of espresso.</p>
+                    <div class="menu-item-prices">
+                        <span class="price-tag"><i class="fas fa-snowflake"></i> Iced - ₱150</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="specialty">
+                <div class="menu-item-image">
+                    <img src="images/menu-items/salted caramel.png" alt="Salted Caramel">
+                </div>
+                <div class="menu-item-content">
+                    <span class="menu-item-title">Salted Caramel</span>
+                    <p class="menu-item-description">Sweet and salty perfection with caramel sauce and sea salt topping.</p>
+                    <div class="menu-item-prices">
+                        <span class="price-tag"><i class="fas fa-snowflake"></i> Iced - ₱145</span>
+                        <span class="price-tag"><i class="fas fa-fire"></i> Hot - ₱150</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="specialty">
+                <div class="menu-item-image">
+                    <img src="images/menu-items/cookies and cream.png" alt="Cookies & Cream">
+                </div>
+                <div class="menu-item-content">
+                    <span class="menu-item-title">Cookies & Cream</span>
+                    <p class="menu-item-description">Indulgent blend of crushed cookies and creamy goodness.</p>
+                    <div class="menu-item-prices">
+                        <span class="price-tag"><i class="fas fa-snowflake"></i> Iced - ₱140</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Non-Coffee Items -->
+            <div class="menu-item" data-category="non-coffee">
+                <div class="menu-item-image">
+                    <img src="images/menu-items/strawberry latte.png" alt="Strawberry Latte">
+                </div>
+                <div class="menu-item-content">
+                    <span class="menu-item-title">Strawberry Latte</span>
+                    <p class="menu-item-description">Delicious mix of sweet, fruity taste of strawberries and milk.</p>
+                    <div class="menu-item-prices">
+                        <span class="price-tag"><i class="fas fa-snowflake"></i> Iced - ₱130</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="non-coffee">
+                <div class="menu-item-image">
+                    <img src="images/menu-items/hibiscus tea.png" alt="Hibiscus Tea">
+                </div>
+                <div class="menu-item-content">
+                    <span class="menu-item-title">Hibiscus Tea</span>
+                    <p class="menu-item-description">Delicious fusion of hibiscus herbal tea with strawberry flavored sauce.</p>
+                    <div class="menu-item-prices">
+                        <span class="price-tag"><i class="fas fa-snowflake"></i> Iced - ₱130</span>
+                        <span class="price-tag"><i class="fas fa-fire"></i> Hot - ₱135</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="non-coffee">
+                <div class="menu-item-image">
+                    <img src="images/menu-items/matcha latte.png" alt="Matcha Latte">
+                    <div class="menu-badge">Popular</div>
+                </div>
+                <div class="menu-item-content">
+                    <span class="menu-item-title">Matcha Latte</span>
+                    <p class="menu-item-description">Premium Japanese green tea powder blended with creamy milk.</p>
+                    <div class="menu-item-prices">
+                        <span class="price-tag"><i class="fas fa-snowflake"></i> Iced - ₱140</span>
+                        <span class="price-tag"><i class="fas fa-fire"></i> Hot - ₱145</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="non-coffee">
+                <div class="menu-item-image">
+                    <img src="images/menu-items/chocolate.png" alt="Chocolate">
+                </div>
+                <div class="menu-item-content">
+                    <span class="menu-item-title">Chocolate</span>
+                    <p class="menu-item-description">Rich and creamy chocolate drink for the ultimate comfort.</p>
+                    <div class="menu-item-prices">
+                        <span class="price-tag"><i class="fas fa-snowflake"></i> Iced - ₱120</span>
+                        <span class="price-tag"><i class="fas fa-fire"></i> Hot - ₱125</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="menu-arrow menu-arrow-left" id="menuPrev">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="menu-arrow menu-arrow-right" id="menuNext">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+
+
+        <button class="menu-arrow menu-arrow-right" id="menuNext">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <!-- Left Side: Follow us on and Contact us -->
+            <div class="footer-left">
+                <!-- Follow us on Section -->
+                <div class="footer-section">
+                    <h3>Follow us on</h3>
+                    <div class="follow-flex">
+                        <a href="https://www.facebook.com/dozecoffeeofficial" target="_blank" class="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>@dozecoffeeofficial</span>
+                        </a>
+                        <a href="https://www.instagram.com/_doze.coffee/" target="_blank" class="instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span>@_doze.coffee</span>
+                        </a>
+                        <a href="https://www.tiktok.com/@doze.coffee" target="_blank" class="tiktok">
+                            <i class="fab fa-tiktok"></i>
+                            <span>@doze.coffee</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Us Section -->
+                <div class="footer-section">
+                    <h3>Contact us</h3>
+                    <div class="contact-flex">
+                        <a href="tel:+639616824284" class="phone">
+                            <i class="fas fa-phone"></i>
+                            <span>0961 682 4284</span>
+                        </a>
+                        <a href="mailto:doze.coffee@yahoo.com" class="email">
+                            <i class="fas fa-envelope"></i>
+                            <span>doze.coffee@yahoo.com</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Creators Section -->
+            <div class="footer-section creators-section">
+                <h4>Created by:</h4>
+                <div class="creators-list">
+                    <p class="creator-name">Bautista, Mark Anthony A.</p>
+                    <p class="creator-name">Bermas, Estella Mae E.</p>
+                    <p class="creator-name">Cunanan, Renz Edric A.</p>
+                    <p class="course-code">Submitted to: Dr. Raquel B. Rivera (2089-6INTROWEB)</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
 </html>

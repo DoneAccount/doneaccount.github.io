@@ -1,6 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- About page -->
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doze. about</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/png" href="images/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="catering.html">Catering</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- About Page Contents -->
+    <section class="story-section">
+        <div class="story-container">
+            <div class="story-texts">
+                <h2>Our Story</h2>
+        <article class="story-text">
+            On May 6, 2023, a quiet corner along B. Mendoza Street, Barangay Sto. Rosario, City of San Fernando, Pampanga came to life.
+            Right in front of Prime Water, a new coffee shop opened its doors.
+            Not with a grand, flashy launch, but with a soft opening that felt more like a warm welcome than a business debut.
+        </article>
+
+        <article class="story-text">
+            The shop was called <strong>doze. coffee</strong>, a name that hinted at its purpose: a place where you could slow down,
+            take a breather, and maybe even “doze” off into your own thoughts while sipping something warm or iced.
+        </article>
+        </div>
+
+        <div class="story-image">
+        <img src="images/hero.png" alt="doze coffee shop interior">
+        </div>
+    </div>
+</section>
+
+    <!-- Location Section -->
+    <section class="location-section">
+        <div class="location-container">
+            <h2>Visit Us</h2>
+            <p class="location-address">
+                <i class="fas fa-map-marker-alt"></i>
+                B. Mendoza Street, Brgy. Sto. Rosario (Pob.), San Fernando, Pampanga
+            </p>
+            <div class="map-wrapper">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3847.8445831676896!2d120.6879936!3d15.0328037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396f795b3b13467%3A0x29f364f0e058f9e4!2sdoze.%20coffee!5e0!3m2!1sen!2sph!4v1697572800000!5m2!1sen!2sph" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="location-info">
+                <div class="info-item">
+                    <i class="fas fa-directions"></i>
+                    <p>Located in front of PrimeWater Infrastructure Corp near the roundabout</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <p>Open daily - Come visit us for your daily dose of caffeine!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <!-- Left Side: Follow us on and Contact us -->
+            <div class="footer-left">
+                <!-- Follow us on Section -->
+                <div class="footer-section">
+                    <h3>Follow us on</h3>
+                    <div class="follow-flex">
+                        <a href="https://www.facebook.com/dozecoffeeofficial" target="_blank" class="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>@dozecoffeeofficial</span>
+                        </a>
+                        <a href="https://www.instagram.com/_doze.coffee/" target="_blank" class="instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span>@_doze.coffee</span>
+                        </a>
+                        <a href="https://www.tiktok.com/@doze.coffee" target="_blank" class="tiktok">
+                            <i class="fab fa-tiktok"></i>
+                            <span>@doze.coffee</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Us Section -->
+                <div class="footer-section">
+                    <h3>Contact us</h3>
+                    <div class="contact-flex">
+                        <a href="tel:+639616824284" class="phone">
+                            <i class="fas fa-phone"></i>
+                            <span>0961 682 4284</span>
+                        </a>
+                        <a href="mailto:doze.coffee@yahoo.com" class="email">
+                            <i class="fas fa-envelope"></i>
+                            <span>doze.coffee@yahoo.com</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Creators Section -->
+            <div class="footer-section creators-section">
+                <h4>Created by:</h4>
+                <div class="creators-list">
+                    <p class="creator-name">Bautista, Mark Anthony A.</p>
+                    <p class="creator-name">Bermas, Estella Mae E.</p>
+                    <p class="creator-name">Cunanan, Renz Edric A.</p>
+                    <p class="course-code">Submitted to: Dr. Raquel B. Rivera (2089-6INTROWEB)</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
 </html>
