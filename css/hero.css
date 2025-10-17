@@ -50,6 +50,7 @@
     color: #eee; /* Account for header height */
     position: relative;
 }
+
 .carousel .list{
     width: 100%;
     height: 100%;
