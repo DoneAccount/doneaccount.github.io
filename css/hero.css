@@ -252,6 +252,7 @@
     animation: transformAnimation 1s ease-in-out 1 forwards;
     animation-delay: 0.3s;
 }
+
 .carousel.effect .item .info a{
     animation-delay: 0.4s;
 }
